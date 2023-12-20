@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Church_Demo.EventsPages.ViewEventPage"
+             Title="View Event">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="officialbackground.jpg" Aspect="AspectFill"/>
+            <StackLayout VerticalOptions="FillAndExpand" Margin="10" Spacing="10">
+                <Frame x:Name="EventNameFrame" BorderColor="Black">
+                    <Label x:Name="EventNameLbl" TextColor="Black" FontSize="Title" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame x:Name="EventDetailsFrame" BorderColor="Black" VerticalOptions="FillAndExpand">
+                    <Label x:Name="EventDetailsLbl" TextColor="Black" HorizontalOptions="Center" FontSize="Medium"/>
+                </Frame>
+                <Frame x:Name="EventDateFrame" BorderColor="Black">
+                    <StackLayout Orientation="Horizontal" Spacing="80" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Label HorizontalTextAlignment="Center" FontSize="Title">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Date" TextColor="Black" FontAttributes="Bold"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label x:Name="EventDateLbl" TextColor="Black" HorizontalOptions="Center" FontSize="Medium"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label HorizontalTextAlignment="Center" FontSize="Title">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Time" TextColor="Black" FontAttributes="Bold"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label x:Name="EventTimeLbl" TextColor="Black" HorizontalOptions="Center" FontSize="Medium"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Church_Demo.MembersPages.MembersPage"
+             Title="Members">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="officialbackground.jpg" Aspect="AspectFill"/>
+            <Frame Margin="20" BackgroundColor="#60FFFFFF" CornerRadius="10">
+                <StackLayout HorizontalOptions="Center" Margin="0,10,0,0">
+                    <Label HorizontalTextAlignment="Center" HeightRequest="75" FontSize="Title">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Demo Church" TextColor="Black" FontAttributes="Bold"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label HorizontalTextAlignment="Center" HeightRequest="25" FontSize="Medium">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Pastor: " TextColor="Black" FontAttributes="Bold"/>
+                                <Span Text="Bryan Adams (616) 123-4567" TextColor="Black"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label HorizontalTextAlignment="Center" HeightRequest="50" FontSize="Medium">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Deacon: " TextColor="Black" FontAttributes="Bold"/>
+                                <Span Text="John Legend (616) 123-4567" TextColor="Black"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label HorizontalTextAlignment="Center" FontSize="Large">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Main Line: " TextColor="Black" FontAttributes="Bold"/>
+                                <Span Text="(616) 123-4567" TextColor="Black"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

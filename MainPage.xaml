@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Church_Demo.MainPage"
+             Title="Home">
+    <ContentPage.Content>
+        <Grid VerticalOptions="Fill">
+            <Image Source="officialbackground.jpg" Aspect="AspectFit"/>
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="10">
+                <Label Text="Demo Church" FontFamily="ArianaFont" FontSize="60" TextColor="#1a1a1a" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,0,0,20"/>
+                <Button x:Name="PrayerRequestsBtn" Clicked="PrayerRequestsBtn_Clicked" BackgroundColor="#80FFFFFF" BorderWidth=".25" TextColor="Black" Text="Prayer Requests" IsVisible="true" Margin="0,0,0,20" FontSize="Title"/>
+                <Button x:Name="NewsFeedPageBtn" Clicked="NewsFeedPageBtn_Clicked" Text="News Feed" BackgroundColor="#80FFFFFF" BorderWidth=".25" TextColor="Black" Margin="0,0,0,20" FontSize="Title"/>
+                <Button x:Name="LiveFeedPageBtn" Clicked="LiveFeedPageBtn_Clicked" Text="Watch Live" BackgroundColor="#80FFFFFF" BorderWidth=".25" TextColor="Black" Margin="0,0,0,20" FontSize="Title"/>
+                <Button x:Name="EventsPageBtn" Clicked="EventsPageBtn_Clicked" Text="Events" BackgroundColor="#80FFFFFF" BorderWidth=".25" TextColor="Black" Margin="0,0,0,20" FontSize="Title"/>
+                <Button x:Name="MembersPageBtn" Clicked="MembersPageBtn_Clicked" Text="Members" BackgroundColor="#80FFFFFF" BorderWidth=".25" TextColor="Black" Margin="0,0,0,20" FontSize="Title"/>
+                <Button x:Name="AdminPageBtn" Clicked="AdminPageBtn_Clicked" Text="Admin Portal" BackgroundColor="#80FFFFFF" IsVisible="false" BorderWidth=".25" TextColor="Black" Margin="0,0,0,20" FontSize="Title"/>
+                <Button x:Name="SettingsPageBtn" Clicked="SettingsPageBtn_Clicked" Text="Settings" BackgroundColor="#80FFFFFF" BorderWidth=".25" TextColor="Black" Margin="0,0,0,20" FontSize="Title"/>
+                <Label x:Name="RandomVerseLbl" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="White" VerticalOptions="End"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

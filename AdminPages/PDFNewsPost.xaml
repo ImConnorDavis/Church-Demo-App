@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.PdfViewer;assembly=Syncfusion.Maui.PdfViewer"
+             x:Class="Church_Demo.AdminPages.PDFNewsPost"
+             Title="PDF Post">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="PublishBtn" Text="Publish" Clicked="PublishPDFBtn_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="officialbackground.jpg" Aspect="AspectFill"/>
+            <StackLayout VerticalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10,10,10,10">
+                    <Button Text="Import PDF" Clicked="ImportPDFBtn_Clicked" BackgroundColor="#8000f7ff" TextColor="Black" BorderColor="Black" BorderWidth=".25" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                <syncfusion:SfPdfViewer x:Name="pdfViewer" IsVisible="False" VerticalOptions="FillAndExpand"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

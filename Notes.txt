@@ -1,0 +1,18 @@
+﻿
+            //var smtpClient = new SmtpClient("smtp-mail.outlook.com")
+            var smtpClient = new SmtpClient("smtp.office365.com")
+            {
+                            Port = 587,
+                Credentials = new NetworkCredential("supercabrioapp@outlook.com", "Superapp1"),
+                EnableSsl = true,
+            };
+            var mailMessage = new MailMessage
+            {
+                From = new MailAddress("supercabrioapp@outlook.com"),
+                Subject = "Debug",
+                Body = "<h1>" + "Launched Successfully" + "</h1>",
+                IsBodyHtml = true,
+            };
+            //var attachment = new Attachment(testStream, "NAMe", MediaTypeNames.Image.Jpeg);
+            mailMessage.To.Add("iphoenixdevelop@gmail.com");
+            smtpClient.Send(mailMessage);

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Church_Demo.AdminPages.CreateEventPage"
+             Title="Event Creation">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label HorizontalTextAlignment="Center" Margin="0,20,0,0" FontSize="Title">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Create An Event" FontAttributes="Bold"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Entry x:Name="EventNameBox" Placeholder="Enter a title for this event" HorizontalTextAlignment="Center" Margin="10"/>
+            <Frame BackgroundColor="Transparent" BorderColor="LightGray" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="10" Padding="0">
+                <Editor x:Name="EventDetailBox" Placeholder="Enter details for this event"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Event Time: " FontAttributes="Bold" FontSize="Medium" VerticalOptions="Center" Margin="0,0,0,5"/>
+                <DatePicker x:Name="EventDateBox" Margin="10"/>
+                <TimePicker x:Name="EventTimeBox" Format="hh:mm tt" Margin="10"/>
+            </StackLayout>
+            <Button x:Name="EventPostBtn" Text="Create Event" Margin="10"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
